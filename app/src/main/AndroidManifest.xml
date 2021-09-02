@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.driverapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PaymentActivity"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/ProfileTheme" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name=".ShowRouteActivity"
+            android:theme="@style/ShowRouteTheme" />
+        <activity
+            android:name=".CustomerCall"
+            android:theme="@style/FullScreenTheme" />
+
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/MapScreenTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LoginScreenTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

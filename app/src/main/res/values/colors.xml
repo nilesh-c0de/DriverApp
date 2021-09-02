@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorJamun">#E91E63</color>
+    <color name="colorDarkPink">#BC1350</color>
+    <color name="colorJamunStatus">#E91E63</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorOrange">#F44336</color>
+    <color name="colorWhite">#FCFCFC</color>
+    <color name="colorRippleEffect">#00BCD4</color>
+
+    <color name="loginColor">#ff9900</color>
+    <color name="registerColor">#0099ff</color>
+    <color name="editTextColor">#f2f2f2</color>
+    <color name="tripColor">#E91E63</color>
+    <color name="collectCashColor">#FF2222</color>
+
+</resources>

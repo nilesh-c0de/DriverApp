@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_login_lyft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="l y f t"
+            android:layout_centerHorizontal="true"
+            android:textSize="48sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_login_lyft"
+            android:layout_centerHorizontal="true"
+            android:text="Happy journey :)"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:fontFamily="serif"/>
+
+        <ImageView
+            android:id="@+id/img_taxi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_taxi_big"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:background="@drawable/signup_style"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_below="@id/img_taxi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:id="@+id/btn_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:background="@drawable/login_style"
+            android:textAllCaps="false"
+            android:layout_below="@id/btn_signup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looking for a rider app? Get it!"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/loginColor"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_login"/>
+    <include layout="@layout/bottom_sheet_register"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

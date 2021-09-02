@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottomsheet_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    android:id="@+id/complete_trip_bottom_sheet">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/completed_rider_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user"
+        app:civ_border_color="#00BCD4"
+        app:civ_border_width="0dp"/>
+
+    <TextView
+        android:id="@+id/completed_username"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test123" />
+
+    <Button
+        android:id="@+id/btn_complete_trip"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/complete_trip_style"
+        android:layout_margin="8dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Complete Trip"/>
+</LinearLayout>

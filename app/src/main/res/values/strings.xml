@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DriverApp</string>
+    <string name="map_key">AIzaSyC3iBrubFrqiw0WbFYytMp2YXG2TuVECog</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Rs">\u20B9</string>
+    <string name="rs">\u20A8</string>
+    <string name="google_directions_api">xd</string>
+</resources>

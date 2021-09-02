@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/route_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+    android:id="@+id/route_rider_image"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/user"
+    app:civ_border_color="#00BCD4"
+    app:civ_border_width="0dp"/>
+
+    <TextView
+        android:id="@+id/route_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="test123"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_arrived"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrived_button"
+        android:text="Confirm you have arrived"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <TextView
+        android:id="@+id/trip_ended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Trip ended"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:layout_margin="16dp"
+        android:layout_below="@+id/fare_total"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_below="@+id/fare_total"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:id="@+id/img_done"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/correct"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/text_msg"
+        android:layout_below="@id/pbb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting for payment..."/>
+
+
+
+    <TextView
+        android:id="@+id/rider_pays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_ended"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Rider pays"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/fare_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rider_pays"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Rs"
+        android:textColor="@color/colorJamun"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_msg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Trip details:"
+            android:textAllCaps="true"
+            android:textStyle="italic" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/username"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Base Fare:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fare_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="@string/Rs"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Lyft Fare:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fare_lyft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="@string/Rs"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tax:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fare_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="@string/Rs"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="Rider's Discount:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fare_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="@string/Rs"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </GridLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="accept payment"
+            android:id="@+id/btn_ap"
+            android:enabled="false"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

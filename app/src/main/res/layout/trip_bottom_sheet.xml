@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottomsheet_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    android:id="@+id/trip_bottom_sheet">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:padding="12dp"
+        android:background="@drawable/username"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nilesh phonde" />
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@android:color/white"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Call"
+            android:textAllCaps="false" />
+
+        <Button
+            android:background="@color/colorRippleEffect"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="8dp"
+            android:id="@+id/btn_start_trip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start trip"
+            android:textAllCaps="false" />
+
+        <Button
+            android:background="@android:color/white"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="horizontal"
+    tools:context=".CustomerCall">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/mapxd"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mapxd"
+        app:civ_border_color="#00BCD4"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/mapxd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="40 min"/>
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:id="@+id/textDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="50km"/>
+
+        
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:id="@+id/textAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Dummy address, Miraj"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorRippleEffect"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btnDecline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:text="Decline"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    
+<!--    <TextView-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="30"-->
+<!--        android:textSize="56sp"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:layout_alignParentTop="true"/>-->
+
+</RelativeLayout>
